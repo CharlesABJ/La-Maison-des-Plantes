@@ -1,19 +1,23 @@
-.banner {
+header {
+    display: flex;
+    flex-direction: column;
+    border-bottom: solid 3px black;
     color: black;
     text-align: right;
     padding: 32px;
-    border-bottom: solid 3px black;
+}
+
+header .head {
     display: flex;
     justify-content: flex-end;
-    flex-direction: row;
     align-items: center;
 }
 
-.banner .logo {
+header .logo {
     height: 45px;
     width: 45px;
 }
 
-.banner h1 {
+header h1 {
     padding-left: 32px;
 }
