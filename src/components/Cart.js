@@ -1,21 +1,21 @@
 import React from "react";
-import "../styles/Card.css";
+import "../styles/Cart.css";
 
-function Card() {
+function Cart() {
   const monsteraPrice = 8;
-  const ivyPrice = 10;
+  const lierrePrice = 10;
   const flowerPrice = 15;
   return (
-    <div className="card">
+    <div className="cart">
       <h2>Panier</h2>
       <ul>
         <li>Monstera : {monsteraPrice}€</li>
-        <li>Lierre : {ivyPrice}€</li>
+        <li>Lierre : {lierrePrice}€</li>
         <li>Fleurs : {flowerPrice}€</li>
       </ul>
-      Total : {monsteraPrice + ivyPrice + flowerPrice}€
+      Total : {monsteraPrice + lierrePrice + flowerPrice}€
     </div>
   );
 }
 
-export default Card;
+export default Cart;

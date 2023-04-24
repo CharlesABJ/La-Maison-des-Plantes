@@ -1,6 +1,7 @@
 import React from "react";
 import { plantList } from "../datas/plantList";
 import "../styles/ShoppingList.css";
+import CareScale from "./CareScale";
 function ShoppingList() {
   const plantCategories = plantList.reduce(
     (acc, plant) =>
@@ -19,6 +20,8 @@ function ShoppingList() {
           <li className="plant-items" key={plant.id}>
             {plant.name}
             {plant.isSpecialOffer ? <div className="sales">Soldes</div> : null}
+            <CareScale careType="water" scaleValue={plant.water} />
+            <CareScale careType="light" scaleValue={plant.light} />
           </li>
         ))}
       </ul>

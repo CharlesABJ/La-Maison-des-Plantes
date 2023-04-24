@@ -1,13 +1,13 @@
 import React from "react";
 import Banner from "./components/Banner";
-import Card from "./components/Card";
+import Cart from "./components/Cart";
 import ShoppingList from "./components/ShoppingList";
 
 function App() {
   return (
     <div>
       <Banner />
-      <Card />
+      <Cart />
       <ShoppingList />
     </div>
   );
