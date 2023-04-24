@@ -1,17 +1,10 @@
 import React from "react";
-
+import { plantList } from "../datas/plantList";
 function ShoppingList() {
-  const plantList = [
-    "monstera",
-    "ficus lyrata",
-    "pothos argenté",
-    "yucca",
-    "palmier",
-  ];
   return (
     <ul>
-      {plantList.map((plant, index) => (
-        <li key={`${plant}-${index}`}>{plant}</li>
+      {plantList.map((plant) => (
+        <li key={plant.id}>{plant.name}</li>
       ))}
     </ul>
   );
